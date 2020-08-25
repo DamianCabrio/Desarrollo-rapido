@@ -9,6 +9,8 @@
 </head>
 <body>
 <form action="mostrarResultado.php" method="post">
+    <h2>Edad de riego</h2>
+    <input type="number" name="riego" min="0" max="105">
     <?php
     for ($i = 0; $i < $_POST["numeroPersonas"]; $i++){
         echo '<input type="date" name="fechas[]">';

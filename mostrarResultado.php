@@ -13,7 +13,7 @@ function calculaedad($fechanacimiento){
 foreach ($_POST["fechas"] as $fecha){
     $grupoRiesgo = 0;
     $edad = calculaedad($fecha);
-    if($edad >= 60){
+    if($edad >= $_POST["riego"]){
         $grupoRiesgo++;
     }
 }
